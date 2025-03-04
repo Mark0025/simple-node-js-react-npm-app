@@ -1,6 +1,11 @@
 pipeline {
     agent any
     
+    environment {
+        CI = 'true'
+        HOST = '0.0.0.0'
+    }
+    
     tools {
         nodejs 'NodeJS'
     }
