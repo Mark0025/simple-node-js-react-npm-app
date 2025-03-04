@@ -2,7 +2,9 @@ pipeline {
     agent {
         docker {
             image 'node:20.11.1-alpine' // Using Alpine for a smaller image
-            args '-p 3000:3000' // Map port 3000 for the React app
+            args '-p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock'
+            registryUrl 'https://registry.hub.docker.com'
+            registryCredentialsId ''  // Using public image, no credentials needed
         }
     }
     
