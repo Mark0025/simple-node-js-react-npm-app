@@ -1,8 +1,9 @@
 pipeline {
-    agent any
-    
-    tools {
-        nodejs 'NodeJS'
+    agent {
+        docker {
+            image 'node:20.11.1-alpine' // Using Alpine for a smaller image
+            args '-p 3000:3000' // Map port 3000 for the React app
+        }
     }
     
     stages {
