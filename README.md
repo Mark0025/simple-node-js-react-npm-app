@@ -1,5 +1,11 @@
 # simple-node-js-react-npm-app
 
+## About
+- **What it is:** Jenkins' tutorial app for learning to build a small React website automatically, with Mark's tweaks to run it in Docker.
+- **Business:** learning
+- **Status:** inactive since 2025-03
+- **Source:** agent research 2026-11-04
+
 This repository is for the
 [Build a Node.js and React app with npm](https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
 tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
